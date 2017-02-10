@@ -1,0 +1,120 @@
+# conky -q -c /media/5/Conky/S11_9_month_cal.conky &
+# pkill -xf "conky -q -c /media/5/Conky/S11_9_month_cal.conky" &
+# Original by CrunchBang user: iMBeCil
+# http://crunchbang.org/forums/viewtopic.php?pid=368592#p368592
+
+###  Begin Window Settings  ##################################################
+own_window yes
+own_window_type normal
+own_window_transparent no #yes
+own_window_hints skip_taskbar,skip_pager
+own_window_colour 000000
+own_window_class Conky
+own_window_title 9 Months
+
+# Use the Xdbe extension? (eliminates flicker)
+# It is highly recommended to use own window with this one
+# so double buffer won't be so big.
+double_buffer yes
+
+### ARGB can be used for real transparency
+### NOTE that a composite manager is required for real transparency.
+### This option will not work as desired (in most cases) in conjunction with
+### own_window_type normal -  Options: yes or no
+ own_window_argb_visual yes
+
+### When ARGB visuals are enabled, this use this to modify the alpha value
+### Use: own_window_type normal
+### Use: own_window_transparent no
+### Valid range is 0-255, where 0 is 0% opacity, and 255 is 100% opacity.
+ own_window_argb_value 200
+
+minimum_size 480 0  # w|h
+maximum_width 480
+
+gap_x 400	# l|r
+gap_y 100	# u|d
+
+alignment tl
+####################################################  End Window Settings  ###
+###  Font Settings  ##########################################################
+# Use Xft (anti-aliased font and stuff)
+use_xft yes
+xftfont monofur:bold:size=11
+# Alpha of Xft font. Must be a value at or between 1 and 0 ###
+xftalpha 1.0
+
+# Force UTF8? requires XFT ###
+override_utf8_locale yes
+
+uppercase no
+######################################################  End Font Settings  ###
+###  Color Settings  #########################################################
+draw_shades yes ##yes
+default_shade_color 000000
+draw_outline no
+default_outline_color 000000
+
+default_color 778899 #LightSlateGray
+color0 8FBC8F #DarkSeaGreen
+color1 778899 #LightSlateGray
+color2 F5F5DC #Beige
+color3 87CEFA #LightSkyBlue
+color4 48D1CC #MediumTurquoise
+color5 FFDEAD #NavajoWhite
+color6 00BFFF #DeepSkyBlue
+color7 B0E0E6 #PowderBlue
+color8 FFD700 #Gold
+color9 DC143C #Crimson
+#####################################################  End Color Settings  ###
+###  Borders Section  ########################################################
+draw_borders no
+# Stippled borders?
+stippled_borders 0
+# border margins
+border_inner_margin 05
+border_outer_margin 0
+# border width
+border_width 0
+# graph borders
+draw_graph_borders yes #no
+#default_graph_size 15 40
+#####################################################  End Borders Secton  ###
+###  Miscellaneous Section  ##################################################
+# Boolean value, if true, Conky will be forked to background when started.
+background yes
+
+# Adds spaces around certain objects to stop them from moving other things
+# around, this only helps if you are using a mono font
+# Options: right, left or none
+use_spacer none
+
+# Subtract (file system) buffers from used memory?
+no_buffers yes
+
+##############################################  End Miscellaneous Section  ###
+
+update_interval 1
+TEXT
+${font DS-Digital:size=90}${alignc}${color5}${time %T}${color}${font}
+${hr}
+${goto 10}${execpi 900 ncal -bh -m `date +%m` -A-4 -B4 | sed ':a;N;$!ba;s/\n/\n${goto 10}/g'}
+${voffset -120}${goto 175}${execpi 900 ncal -bh -m `date +%m` -A-3 -B3 | sed ':a;N;$!ba;s/\n/\n${goto 175}/g'}
+${voffset -120}${goto 335}${execpi 900 ncal -bh -m `date +%m` -A-2 -B2 | sed ':a;N;$!ba;s/\n/\n${goto 335}/g'}
+${hr}
+${goto 10}${execpi 900 ncal -bh -m `date +%m` -A-1 -B1 | sed ':a;N;$!ba;s/\n/\n${goto 10}/g'}
+${voffset -120}${goto 170}      ${color5}${time %b %Y}${color}
+${goto 175}${if_match "${time %a}" == "Sun"}${color5}Su${color} Mo Tu We Th Fr Sa${else}\
+${if_match "${time %a}" == "Mon"}Su ${color5}Mo${color} Tu We Th Fr Sa${else}\
+${if_match "${time %a}" == "Tue"}Su Mo ${color5}Tu${color} We Th Fr Sa${else}\
+${if_match "${time %a}" == "Wed"}Su Mo Tu ${color5}We${color} Th Fr Sa${else}\
+${if_match "${time %a}" == "Thu"}Su Mo Tu We ${color5}Th${color} Fr Sa${else}\
+${if_match "${time %a}" == "Fri"}Su Mo Tu We Th ${color5}Fr${color} Sa${else}\
+Su Mo Tu We Th Fr ${color5}Sa${color}${endif}${endif}${endif}${endif}${endif}${endif}
+${goto 175}${execpi 900 LAR=`date +%-d`; ncal -bh | sed '2d' | sed -e '1d' -e 's/\<'$LAR'\>/${color5}&${color}/' | sed ':a;N;$!ba;s/\n/\n${goto 175}/g'}${color}
+${voffset -120}${goto 335}${execpi 900 ncal -bh -m `date +%m` -A1 -B-1 | sed ':a;N;$!ba;s/\n/\n${goto 335}/g'}
+${hr}
+${goto 10}${execpi 900 ncal -bh -m `date +%m` -A2 -B-2 | sed ':a;N;$!ba;s/\n/\n${goto 10}/g'}
+${voffset -120}${goto 175}${execpi 900 ncal -bh -m `date +%m` -A3 -B-3 | sed ':a;N;$!ba;s/\n/\n${goto 175}/g'}
+${voffset -120}${goto 335}${execpi 900 ncal -bh -m `date +%m` -A4 -B-4 | sed ':a;N;$!ba;s/\n/\n${goto 335}/g'}
+${hr}

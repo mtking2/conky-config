@@ -1,0 +1,55 @@
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 6,
+    --default_color = '#FFFFEC',
+    default_color = 'lightgrey',
+    color5 = '#FFDEAD',--NavajoWhite
+    double_buffer = true,
+    draw_borders = false,
+    draw_outline = false, -- amplifies text if yes
+    draw_shades = false,
+    font = 'Ubuntu Mono:normal:size=11',
+    gap_x = 10,
+    gap_y = 145,
+    maximum_width  = 320,
+    minimum_width  = 320,
+    no_buffers = true,
+
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 2,
+    update_interval = 1.0,
+    uppercase = false, -- set to yes if you want all text to be in uppercase
+    use_spacer = 'right',
+    use_xft = true,
+
+}
+
+conky.text = [[
+${color5}${font Sans:normal:size=9}CPU ${hr 2}$color$font
+${execi 60000 sudo lshw | grep CPU | grep product | awk '{ print substr($0, index($0,$2)) }'}
+
+Total CPU: ${cpu cpu0}%
+${color 597DB2}${cpubar}$color
+${cpugraph 000000 597DB2}
+Core 1: ${freq 1} MHz        Temp: $color ${exec sensors|grep 'Core 0'|awk '{print $3}'}
+${cpu cpu1}% ${offset 5} ${color 597DB2}${cpubar cpu1}$color
+Core 2: ${freq 2} MHz        Temp: $color ${exec sensors|grep 'Core 1'|awk '{print $3}'}
+${cpu cpu2}% ${offset 5} ${color 597DB2}${cpubar cpu2}$color
+Core 3: ${freq 3} MHz        Temp: $color ${exec sensors|grep 'Core 2'|awk '{print $3}'}
+${cpu cpu3}% ${offset 5} ${color 597DB2}${cpubar cpu3}$color
+Core 4: ${freq 4} MHz        Temp: $color ${exec sensors|grep 'Core 3'|awk '{print $3}'}
+${cpu cpu4}% ${offset 5} ${color 597DB2}${cpubar cpu4}$color
+
+Name              PID    CPU%   MEM%
+${color 808080}${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+${color 808080}${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+${color 808080}${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+${color 808080}${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+]];

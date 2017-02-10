@@ -1,0 +1,43 @@
+conky.config = {
+    alignment = 'top_right',
+    background = true,
+    border_width = 6,
+    default_color = 'lightgrey',
+    --default_color = '#FFFFEC',
+    color5 = '#FFDEAD', --NavajoWhite
+    --oldOrange = '#CC9900',
+    double_buffer = true,
+    draw_borders = false,
+    draw_outline = false, -- amplifies text if yes
+    draw_shades = false,
+    use_xft = true,
+    font = 'Ubuntu Mono:normal:size=11',
+    gap_x = 10,
+    gap_y = 10,
+    maximum_width  = 320,
+    minimum_width  = 320,
+    no_buffers = true,
+
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 2,
+    update_interval = 1.0,
+    uppercase = false, -- set to yes if you want all text to be in uppercase
+    use_spacer = 'right',
+
+}
+
+conky.text = [[
+${color5}${font Sans:normal:size=9}SYSTEM ${hr 2}$color$font
+OS:${alignr} ${execi 60000 env | grep '^DESKTOP_SESSION' | cut -d'=' -f2-} ${execi 60000 cat /etc/*release | grep -w 'VERSION' | awk 'match($0, /".+"/) {print substr($0, RSTART+1, RLENGTH-2)}'}
+Kernel:${alignr} $sysname $kernel $machine
+Hostname:${alignr} $nodename
+Conky:${alignr} $conky_version
+Uptime:${alignr} $uptime
+Entropy:${alignr} ${entropy_perc}%
+]];

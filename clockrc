@@ -1,0 +1,38 @@
+conky.config = {
+    alignment = 'middle_middle',
+    background = false,
+    border_width = 6,
+    default_color = '#FFFFEC',
+    color5 = '#FFDEAD',--NavajoWhite
+    double_buffer = true,
+    draw_borders = false,
+    draw_outline = false, -- amplifies text if yes
+    draw_shades = false,
+    font = 'Ubuntu Mono:normal:size=11',
+    gap_x = 0,
+    gap_y = 0,
+    max_text_width = 512,
+    maximum_width  = 600,
+    minimum_width  = 600,
+    maximum_height = 100,
+    minimum_height = 110,
+    no_buffers = true,
+
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 2,
+    text_buffer_size = 512,
+    update_interval = 1.0,
+    uppercase = false, -- set to yes if you want all text to be in uppercase
+    use_spacer = 'right',
+    use_xft = true,
+}
+
+conky.text = [[
+${color5}${alignc}${font DS\-Digital:normal:size=48}${time %T}${color darkgrey}${font}
+]];

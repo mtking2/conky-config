@@ -1,0 +1,51 @@
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 6,
+    cpu_avg_samples = 1,
+    --default_color = '#FFFFEC',
+    default_color = 'lightgrey',
+    color5 = '#FFDEAD',--NavajoWhite
+    double_buffer = true,
+    draw_borders = false,
+    draw_outline = false, -- amplifies text if yes
+    draw_shades = false,
+    font = 'Ubuntu Mono:normal:size=11',
+    gap_x = 10,
+    gap_y = 815,
+    maximum_width  = 320,
+    minimum_width  = 320,
+    net_avg_samples = 1,
+    no_buffers = true,
+
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 2,
+    total_run_times = 0,
+    update_interval = 1.0,
+    uppercase = false, -- set to yes if you want all text to be in uppercase
+    use_spacer = 'right',
+    use_xft = true,
+}
+
+conky.text = [[
+${color5}${font Sans:normal:size=9}NETWORK ${hr 2}$color$font
+ISP: ${alignr} ${execi 6000 curl ipinfo.io/org}
+#Locale: ${alignr} ${execi 6000 curl ipinfo.io/city}, ${execi 6000 curl ipinfo.io/region}, ${execi 6000 curl ipinfo.io/country}
+#${alignr} ${execi 6000 curl ipinfo.io/loc}
+Local IP: ${alignr} ${addr wlan0}
+Public IP: ${alignr} ${execi 600 wget http://ipinfo.io/ip -qO -}
+wlan0 SSID: ${alignr} ${if_existing /sys/class/net/wlan0/operstate up}${color green}${exec iwgetid -r}${else}${color red}DISCONNECTED${endif}$color
+eth0: ${alignr} ${if_existing /sys/class/net/eth0/operstate up}${color green}CONNECTED${else}${color red}DISCONNECTED${endif}$color
+Ping: ${alignr} ${execi 30 ping www.google.com -c 1 | grep time= | rev | cut -c -6 | rev}
+
+Down: $color${downspeed wlan0} k/s ${alignr}Up: ${upspeed wlan0} k/s
+${downspeedgraph wlan0 25,140 000000 ff0000} ${alignr}${upspeedgraph wlan0 25,140 000000 00ff00}$color
+Total: ${totaldown wlan0} ${alignr}Total: ${totalup wlan0}
+Inbound: ${tcp_portmon 1 32767 count} Outbound: ${tcp_portmon 32768 61000 count}${alignr}Total: ${tcp_portmon 1 65535 count}
+]];

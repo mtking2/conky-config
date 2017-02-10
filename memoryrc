@@ -1,0 +1,38 @@
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 6,
+    --default_color = '#FFFFEC',
+    default_color = 'lightgrey',
+    color5 = '#FFDEAD',--NavajoWhite
+    double_buffer = true,
+    draw_borders = false,
+    draw_outline = false, -- amplifies text if yes
+    draw_shades = false,
+    font = 'Ubuntu Mono:normal:size=11',
+    gap_x = 10,
+    gap_y = 600,
+    maximum_width  = 320,
+    minimum_width  = 320,
+    no_buffers = true,
+
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    stippled_borders = 2,
+    update_interval = 1.0,
+    uppercase = false, -- set to yes if you want all text to be in uppercase
+    use_spacer = 'right',
+    use_xft = true,
+}
+
+conky.text = [[
+${color5}${font Sans:normal:size=9}MEMORY ${hr 2}$color$font
+RAM Used: ${mem}	RAM Free: ${memfree}/ ${memmax}
+RAM: $memperc%  ${color FF6600} ${membar 6}$color
+Swap: $swapperc%  ${color FF6600} ${swapbar 6}$color
+]];
