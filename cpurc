@@ -33,7 +33,7 @@ conky.config = {
 
 conky.text = [[
 ${color5}${font Sans:normal:size=9}CPU ${hr 2}$color$font
-${execi 60000 sudo lshw | grep CPU | grep product | awk '{ print substr($0, index($0,$2)) }'}
+${execi 600 lshw | grep CPU | grep product | awk '{ print substr($0, index($0,$2)) }'}
 
 Total CPU: ${cpu cpu0}%
 ${color 597DB2}${cpubar}$color

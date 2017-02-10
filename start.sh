@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# sleep 20
+#sleep 20
 
 DIR=~/.conky/
 
@@ -29,7 +29,7 @@ main() {
     launch "networkrc"
     launch "syslogrc"
     launch "calrc"
-    conky -c ~/1_accuweather/.conkyrc_1_images_wind_2016    
+    conky -c ~/1_accuweather/.conkyrc_1_images_wind_2016
     # conky -c ~/1_accuweather/.conkyrc_1_weatherfont_simpler
     # launch "cal9morc"
 

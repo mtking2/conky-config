@@ -32,7 +32,7 @@ conky.config = {
 
 conky.text = [[
 ${color5}${font Sans:normal:size=9}GPU ${hr 2}$color$font
-${if_match "${execi 60000 sudo lshw -C video | grep vendor | awk '{print $2}'}" == "NVIDIA"}${exec nvidia-smi -q | grep 'Product Name' | awk '{print $4" "$5" "$6}'} $alignr ${exec nvidia-smi -q | grep 'Driver Version' | awk '{print $4}'}
+${if_match "${execi 600 lshw -C video | grep vendor | awk '{print $2}'}" == "NVIDIA"}${exec nvidia-smi -q | grep 'Product Name' | awk '{print $4" "$5" "$6}'} $alignr ${exec nvidia-smi -q | grep 'Driver Version' | awk '{print $4}'}
 # Driver: $alignr ${exec nvidia-smi -q | grep 'Driver Version' | awk '{print $4}'}
 
 Total Utilization: $alignr ${exec nvidia-smi | awk 'FNR == 9 {print $13}'}
@@ -40,7 +40,7 @@ Temp: $alignr ${nvidia temp}°C
 Core: $alignr ${nvidia gpufreq} MHz
 Mem:  $alignr ${nvidia memfreq} MHz
 RAM:  $alignr ${exec nvidia-smi | awk 'FNR == 9 {print $9" "$10" "$11}'}
-${else}${if_match "${execi 600 sudo lshw -C video | grep vendor | awk '{print $2}'}" == "Intel"}
+${else}${if_match "${execi 600 lshw -C video | grep vendor | awk '{print $2}'}" == "Intel"}
 ${execi 60000 lspci | grep VGA | awk '{print substr($0, index($0, $5))}' | fold -s40}
 
 ${execi 60000 sudo lshw -C video | grep clock | awk '{print $1" "$2}'}

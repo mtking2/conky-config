@@ -14,8 +14,8 @@ conky.config = {
     gap_x = 10,
     gap_y = 10,
     max_text_width = 512,
-    maximum_width  = 200,
-    minimum_width  = 200,
+    maximum_width  = 650,
+    minimum_width  = 650,
     maximum_height = 100,
     minimum_height = 110,
     no_buffers = true,
@@ -37,11 +37,11 @@ conky.config = {
 
 conky.text = [[
 ${color5}${font DS\-Digital:normal:size=48}${time %T}${color darkgrey}${font}
-#
-#${color1}${font Sans:normal:size=9}LOGS ${hr 2}${color darkgrey}$font
-#/var/log/syslog:
-#${execi 30 tail -n5 /var/log/syslog | fold -w80}
-#
-#dmesg:
-#${execi 30 dmesg | tail -n5 | fold -w80}
+
+${color1}${font Sans:normal:size=9}LOGS ${hr 2}${color darkgrey}$font
+/var/log/syslog:
+${execi 30 tail -n5 /var/log/syslog | fold -w80}
+
+dmesg:
+${execi 30 dmesg | tail -n5 | fold -w80}
 ]];
