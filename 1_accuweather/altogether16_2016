@@ -1,0 +1,26 @@
+${color ffe595}TIME${goto 100}Wed:3am${goto 160}4am${goto 220}5am${goto 280}6am${goto 340}7am${goto 400}8am${goto 460}9am${goto 520}10am${goto 580}Wed:11am${goto 640}12pm${goto 700}1pm${goto 760}2pm${goto 820}3pm${goto 880}4pm${goto 940}5pm${goto 1000}6pm
+
+
+${image $HOME/1_accuweather/hourly_2016/hourly_1.png -s 36x36 -p 85,49}${image $HOME/1_accuweather/hourly_2016/hourly_2.png -s 36x36 -p 145,49}${image $HOME/1_accuweather/hourly_2016/hourly_3.png -s 36x36 -p 205,49}${image $HOME/1_accuweather/hourly_2016/hourly_4.png -s 36x36 -p 265,49}${image $HOME/1_accuweather/hourly_2016/hourly_5.png -s 36x36 -p 325,49}${image $HOME/1_accuweather/hourly_2016/hourly_6.png -s 36x36 -p 385,49}${image $HOME/1_accuweather/hourly_2016/hourly_7.png -s 36x36 -p 445,49}${image $HOME/1_accuweather/hourly_2016/hourly_8.png -s 36x36 -p 505,49}${image $HOME/1_accuweather/hourly_2016/hourly_9.png -s 36x36 -p 565,49}${image $HOME/1_accuweather/hourly_2016/hourly_10.png -s 36x36 -p 625,49}${image $HOME/1_accuweather/hourly_2016/hourly_11.png -s 36x36 -p 685,49}${image $HOME/1_accuweather/hourly_2016/hourly_12.png -s 36x36 -p 745,49}${image $HOME/1_accuweather/hourly_2016/hourly_13.png -s 36x36 -p 805,49}${image $HOME/1_accuweather/hourly_2016/hourly_14.png -s 36x36 -p 865,49}${image $HOME/1_accuweather/hourly_2016/hourly_15.png -s 36x36 -p 925,49}${image $HOME/1_accuweather/hourly_2016/hourly_16.png -s 36x36 -p 985,49}
+${color ffe595}FORECAST${color}${goto 100}Mostly${goto 160}Cloudy${goto 220}Cloudy${goto 280}Cloudy${goto 340}Cloudy${goto 400}Partly${goto 460}Partly${goto 520}Partly${goto 580}Partly${goto 640}Partly${goto 700}Mostly${goto 760}Mostly${goto 820}Mostly${goto 880}Mostly${goto 940}Mostly${goto 1000}Mostly
+${goto 100}Cloudy${goto 160}${goto 220}${goto 280}${goto 340}${goto 400}Cloudy${goto 460}Cloudy${goto 520}Cloudy${goto 580}Cloudy${goto 640}Cloudy${goto 700}Sunny${goto 760}Sunny${goto 820}Sunny${goto 880}Sunny${goto 940}Sunny${goto 1000}Sunny
+${color ffe595}${goto 100}${hr 1}
+TEMPER.${color}${goto 100}1°${goto 160}1°${goto 220}1°${goto 280}1°${goto 340}2°${goto 400}3°${goto 460}4°${goto 520}5°${goto 580}6°${goto 640}7°${goto 700}8°${goto 760}9°${goto 820}9°${goto 880}8°${goto 940}7°${goto 1000}5°
+${color ffe595}${goto 100}${hr 1}
+REAL FEEL${color}${goto 100}4°${goto 160}3°${goto 220}3°${goto 280}3°${goto 340}3°${goto 400}4°${goto 460}5°${goto 520}8°${goto 580}10°${goto 640}10°${goto 700}12°${goto 760}12°${goto 820}10°${goto 880}9°${goto 940}7°${goto 1000}6°
+${color ffe595}${goto 100}${hr 1}
+WIND${color}${goto 100}0 ${goto 160}2 W${goto 220}2 WNW${goto 280}4 NW${goto 340}6 NNW${goto 400}6 NNW${goto 460}6 N${goto 520}6 N${goto 580}6 N${goto 640}6 N${goto 700}6 NNE${goto 760}6 NNE${goto 820}6 NE${goto 880}6 NE${goto 940}6 NE${goto 1000}6 NE
+${color ffe595}${goto 100}${hr 1}
+RAIN${color}${goto 100}6%${goto 160}6%${goto 220}6%${goto 280}5%${goto 340}3%${goto 400}3%${goto 460}3%${goto 520}3%${goto 580}3%${goto 640}2%${goto 700}0%${goto 760}0%${goto 820}0%${goto 880}0%${goto 940}0%${goto 1000}0%
+${color ffe595}${goto 100}${hr 1}
+SNOW${color}${goto 100}0%${goto 160}0%${goto 220}0%${goto 280}0%${goto 340}0%${goto 400}0%${goto 460}0%${goto 520}0%${goto 580}0%${goto 640}0%${goto 700}0%${goto 760}0%${goto 820}0%${goto 880}0%${goto 940}0%${goto 1000}0%
+${color ffe595}${goto 100}${hr 1}
+ICE${color}${goto 100}0%${goto 160}0%${goto 220}0%${goto 280}0%${goto 340}0%${goto 400}0%${goto 460}0%${goto 520}0%${goto 580}0%${goto 640}0%${goto 700}0%${goto 760}0%${goto 820}0%${goto 880}0%${goto 940}0%${goto 1000}0%
+${color ffe595}${goto 100}${hr 1}
+UV INDEX${color}${goto 100}0${goto 160}0${goto 220}0${goto 280}0${goto 340}0${goto 400}0${goto 460}1${goto 520}2${goto 580}2${goto 640}2${goto 700}3${goto 760}2${goto 820}1${goto 880}0${goto 940}0${goto 1000}0
+${color ffe595}${goto 100}${hr 1}
+CLOUD COV.${color}${goto 100}76%${goto 160}70%${goto 220}70%${goto 280}70%${goto 340}70%${goto 400}59%${goto 460}58%${goto 520}58%${goto 580}58%${goto 640}64%${goto 700}25%${goto 760}25%${goto 820}25%${goto 880}25%${goto 940}25%${goto 1000}25%
+${color ffe595}${goto 100}${hr 1}
+HUMIDITY${color}${goto 100}97%${goto 160}92%${goto 220}86%${goto 280}85%${goto 340}81%${goto 400}85%${goto 460}82%${goto 520}75%${goto 580}65%${goto 640}56%${goto 700}51%${goto 760}47%${goto 820}46%${goto 880}46%${goto 940}50%${goto 1000}56%
+${color ffe595}${goto 100}${hr 1}
+DEW POINT${color}${goto 100}1°${goto 160}0°${goto 220}-1°${goto 280}-1°${goto 340}-1°${goto 400}0°${goto 460}1°${goto 520}1°${goto 580}0°${goto 640}-1°${goto 700}-1°${goto 760}-2°${goto 820}-2°${goto 880}-3°${goto 940}-3°${goto 1000}-3°

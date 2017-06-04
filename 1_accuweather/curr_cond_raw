@@ -1,0 +1,87 @@
+                    <li class="first current { target: '#detail-now' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/current-weather/334848" class=""><span>Now</span></a>
+                    </li>
+                    <li class="{ target: '#detail-day-night' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848"><span>Daily</span></a></li>
+                    <li class="last { target: '#detail-hourly' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/hourly-weather-forecast/334848"><span>Hourly</span></a></li>
+                    <li class="{ target: '#detail-morning' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/morning-weather-forecast/334848"><span>Morning</span></a></li>
+                    <li class="{ target: '#detail-afternoon' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/afternoon-weather-forecast/334848"><span>Afternoon</span></a></li>
+                    <li class="{ target: '#detail-evening' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/evening-weather-forecast/334848"><span>Evening</span></a></li>
+                    <li class="last { target: '#detail-overnight' }"><a href="http://www.accuweather.com/en/us/newland-nc/28657/overnight-weather-forecast/334848"><span>Overnight</span></a></li>                      
+                  </ul>
+                  <!-- /#detail-tab-buttons.detail-tab-buttons -->
+                  <div id="detail-now" class="detail-tab-panel day">
+                    <div class="bg bg-su">
+                      <div class="forecast">
+                        <div class="icon i-4-xl"></div>
+                        <div class="info"> 
+                            <div class="temp">
+                                <span class="large-temp">67&deg;</span>
+                                <span class="small-temp"><em>RealFeel&#174;</em> 76&deg;</span>
+                            </div>
+                            <span class="cond">Clouds and sun</span>
+                        </div>
+                        <!-- /.info -->
+                      </div>
+                      <!-- /.forecast -->
+                      <div class="more-info"> 
+                        
+                        
+<div class="wind-box-lg">
+    <div class="wind-point E"></div>
+    <div class="wind-compass"></div>
+</div>                                                 
+                                            
+                        <ul class="stats">
+                          <li class="wind"><strong>2 mph</strong></li>
+                          <li>Humidity: <strong>79%</strong></li>
+                          <li>Pressure: <strong>30.12 in &darr;</strong></li>
+                          <li>UV Index: <strong>8</strong></li>
+                          <li>Cloud Cover: <strong>50%</strong></li>
+                          <li>Ceiling: <strong>28200 ft</strong></li>
+                          <li>Dew Point: <strong>60&#176;&nbsp;F</strong></li>
+                          <li>Visibility: <strong>10 mi</strong></li>
+                        </ul>
+                        <!-- /.stats -->
+                      </div>
+                      <!-- /.more-info -->
+                                             
+                    </div>
+                    <!-- /.bg -->
+                  </div>
+                  <!-- /.detail-tab-panel --> 
+                </div>
+                <!-- /#details -->
+
+                <div class="rise-modules">
+    <div class="row">
+        <div id="feature-sun" class="feature feature-first">
+            <div class="inner">
+                <div class="feature-title">
+                    <h3 class="lt">Sunrise/Sunset</h3>
+                </div>
+                <!-- /.feature-title -->
+
+                <ul class="time-period">
+                    <li>Sunrise: <span>6:11 AM</span></li>
+                    <li>Sunset: <span>8:41 PM</span></li>
+                    <li class="duration">Duration: <span>14:30 hr</span></li>
+                </ul>
+                <div class="icon i-1-m"></div>
+                <!-- /.content -->
+            </div>
+        </div>
+        <!-- /.feature -->
+
+        <div id="feature-moon" class="feature">
+            <div class="inner">
+                <div class="feature-title">
+                    <h3 class="lt">Moonrise/Moonset</h3>
+                </div>
+                <!-- /.feature-title -->
+
+                <ul class="time-period">
+                    <li>Moonrise: <span>4:19 PM</span></li>
+                    <li>Moonset: <span>4:04 AM</span></li>
+                    <li class="duration">Duration: <span>11:45 hr</span></li>
+                </ul>
+                <div class="icon i-33-m"></div>
+                <a href="http://www.accuweather.com/en/us/newland-nc/28657/astronomy-weather/334848" class="more rt">Astronomy <span class="arrow"></span></a>

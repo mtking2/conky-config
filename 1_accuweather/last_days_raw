@@ -1,0 +1,100 @@
+                        <div class="feed-controls clearfix">
+  <span class="lt">6 - 10 of 90 days | <a href="http://www.accuweather.com/en/us/newland-nc/28657/month/334848?view=table">All 90 days</a></span>
+  <ul class="g g-nav rt">
+          <li class="first"><a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=1"><span class="arrow-left"></span> Prev 5</a></li>
+          <li class="last"><a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=11">Next 5 <span class="arrow-right"></span></a></li>
+  </ul>
+</div>
+<!-- /.feed-controls -->
+
+<div id="feed-tabs" class="panel-list">
+        <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=1" class="arrow-left">Previous 5 Days<span></span></a>
+        <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=11" class="arrow-right">Next 5 Days<span></span></a>
+  <ul>
+    <li class="day fday6 current first cl { href: 'http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=6' }" data-href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=6">
+        <div class="bg bg-c">
+            <h3><a href="#">Fri</a></h3>
+            <h4>Jun 9</h4>
+            <div class="icon i-6-l "></div>
+            <div class="info">
+                    <div class="temp ">
+                        <span class="large-temp">69&deg;</span>
+                        <span class="small-temp">/51&deg;F</span>
+                    </div>
+                <span class="cond">A brief afternoon shower</span>
+            </div>
+            <!-- /.info -->
+        </div>
+        <!-- /.bg -->
+    </li>
+    <li class="day fday7 hv  cl { href: 'http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=7' }" data-href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=7">
+        <div class="bg bg-su">
+            <h3><a href="#">Sat</a></h3>
+            <h4>Jun 10</h4>
+            <div class="icon i-3-m "></div>
+            <div class="info">
+                    <div class="temp ">
+                        <span class="large-temp">72&deg;</span>
+                        <span class="small-temp">/55&deg;</span>
+                    </div>
+                <span class="cond">A thunderstorm possible</span>
+            </div>
+            <!-- /.info -->
+                <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=7" class="bt-more">More</a>
+        </div>
+        <!-- /.bg -->
+    </li>
+    <li class="day fday8 hv  cl { href: 'http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=8' }" data-href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=8">
+        <div class="bg bg-su">
+            <h3><a href="#">Sun</a></h3>
+            <h4>Jun 11</h4>
+            <div class="icon i-3-m "></div>
+            <div class="info">
+                    <div class="temp ">
+                        <span class="large-temp">78&deg;</span>
+                        <span class="small-temp">/57&deg;</span>
+                    </div>
+                <span class="cond">Partly sunny</span>
+            </div>
+            <!-- /.info -->
+                <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=8" class="bt-more">More</a>
+        </div>
+        <!-- /.bg -->
+    </li>
+    <li class="day fday9 hv  cl { href: 'http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=9' }" data-href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=9">
+        <div class="bg bg-su">
+            <h3><a href="#">Mon</a></h3>
+            <h4>Jun 12</h4>
+            <div class="icon i-1-m "></div>
+            <div class="info">
+                    <div class="temp ">
+                        <span class="large-temp">76&deg;</span>
+                        <span class="small-temp">/53&deg;</span>
+                    </div>
+                <span class="cond">A full day of sunshine</span>
+            </div>
+            <!-- /.info -->
+                <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=9" class="bt-more">More</a>
+        </div>
+        <!-- /.bg -->
+    </li>
+    <li class="day fday10 hv last cl { href: 'http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=10' }" data-href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=10">
+        <div class="bg bg-su">
+            <h3><a href="#">Tue</a></h3>
+            <h4>Jun 13</h4>
+            <div class="icon i-3-m "></div>
+            <div class="info">
+                    <div class="temp ">
+                        <span class="large-temp">79&deg;</span>
+                        <span class="small-temp">/60&deg;</span>
+                    </div>
+                <span class="cond">A p.m. t-storm possible</span>
+            </div>
+            <!-- /.info -->
+                <a href="http://www.accuweather.com/en/us/newland-nc/28657/daily-weather-forecast/334848?day=10" class="bt-more">More</a>
+        </div>
+        <!-- /.bg -->
+    </li>
+  </ul>
+</div>
+<!-- /.feed-tabs -->

@@ -2,6 +2,14 @@
 
 This repo is used to house my configuration for conky. I'm constantly tweaking and fiddling with it so hopefully this repo can help keep track of everything.
 
+## Install
+
+  1. Install conky (e.g. Ubuntu): `sudo apt-get install conky`
+  2. Clone this repo.
+  3. Copy everything in the repo's **conky** folder into `~/.conky` in your home directory.
+     - For the weather scripts to work, copy the **1_accuweather** folder into your home directory `~/`
+  4. Run `./start.sh`
+
 ## Overview
 
 Here is my entire desktop showing all of the conky goodness.
